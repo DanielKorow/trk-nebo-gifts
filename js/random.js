@@ -34,7 +34,6 @@ $(document).keypress(function(e){
 })
 
 
-
 	// var gifts = {1:'media/1.jpg', 
 	// 			 2:'media/2.jpg', 
 	// 			 3:'media/3.jpg', 
