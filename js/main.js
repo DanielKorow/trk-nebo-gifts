@@ -10,10 +10,15 @@ function flip(t){
 	// let card = document.getElementById(selector);
 		if(t.classList.contains('active')) { 
     		t.classList.remove('active');
-    		// delete 
 		}
 		else {
     	 	t.classList.add('active');
+    	 	var gifts = localStorage.getItem('gifts')
+    		var gifts_obj = JSON.parse(gifts)
+    		console.log($(t).attr('id'))
+    		delete gifts_obj[$(t).attr('id')]
+    		var gifts = JSON.stringify(gifts_obj)
+    		localStorage.setItem('gifts', gifts)
 		}
 	}
 
