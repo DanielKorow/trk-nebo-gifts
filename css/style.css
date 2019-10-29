@@ -1,4 +1,5 @@
 body {
+	cursor: url(../media/cursor/cursor.png), auto;
 	margin: 0px;
 }
 
@@ -42,7 +43,7 @@ body {
 }
 
 .flip-card {
-	cursor: pointer;
+	cursor: url(../media/cursor/cursor_active.png), auto;
 	height: 250px;
 	width: 150px;
   	perspective: 1000px;
