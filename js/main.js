@@ -19,6 +19,9 @@ function flip(t){
     		delete gifts_obj[$(t).attr('id')]
     		var gifts = JSON.stringify(gifts_obj)
     		localStorage.setItem('gifts', gifts)
+    		$('.prize').css({'z-index': 2})
+    		$('.prize').delay(1000).animate({opacity: 1}, 1500)
+    		$('.prize').append(`<img class='prize-img' src='media/gifts/${$(t).attr('id')}.jpg'>`)
 		}
 	}
 

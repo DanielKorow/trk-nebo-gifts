@@ -3,9 +3,16 @@ $(document).ready(function(){
 	$('.flip-card').each(function(){
 		dict.push({"top": $(this).position().top, "left": $(this).position().left})
 	})
-	$('.flip-card').each(function(){
-		$(this).addClass('active')
+	// $('.flip-card').each(function(){
+	// 	$(this).addClass('active')
+	// 	$(this).css({top: $(this).position().top, left: $(this).position().left})
+	// })
+	$('.flip-card').each(function(i, el){
 		$(this).css({top: $(this).position().top, left: $(this).position().left})
+		setTimeout(function() {
+	      $(el).addClass("active");
+	    }, 100 + (i * 100));
+		
 	})
 	$('.flip-card').css({position: "absolute"})
 

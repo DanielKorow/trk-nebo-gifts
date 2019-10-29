@@ -42,6 +42,7 @@ body {
 }
 
 .flip-card {
+	cursor: pointer;
 	height: 250px;
 	width: 150px;
   	perspective: 1000px;
@@ -76,4 +77,18 @@ body {
 .flip-card-back {
   color: white;
   transform: rotateY(180deg);
+}
+
+.prize {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	height: 100vh;
+	width: 100vw;
+}
+
+.prize-img {
+	height: 100%;
+	width: 100%;
 }
